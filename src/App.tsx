@@ -4,7 +4,7 @@ import Deck from './components/Deck/Deck';
 import DrawnCards from './components/DrawnCards/DrawnCards';
 import { values, suits, Card } from './utils/constant';
  
-const generateDeck = (): Card[] => {
+export const generateDeck = (): Card[] => {
   const deck: Card[] = [];
   for (const suit of suits) {
     for (const value of values) {
